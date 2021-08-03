@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+img {
+    display: block;
+}
+
+a,
+button {
+    font-family: $font-stack-Ubuntu;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-stack-Overpass;
+}
+
+button {
+    font-family: $font-stack-Overpass;
+}
+
+body {
+    font-size: rem(16px);
+    font-family: $font-stack-Overpass;
+    min-height: 100%;
+    @include background-Gradient-DarkBlue;
+}

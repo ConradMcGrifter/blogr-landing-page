@@ -44,15 +44,17 @@
                     // outline: solid pink 2px;
 
                     .menu__li {
-                        padding: 0.5em 1em 0.5em 0;
+                        display: flex;
+
                         // outline: solid green 1px;
                         position: relative;
 
                         & + .menu__li {
-                            margin-left: 1em;
+                            margin-left: 2em;
                         }
 
                         .menu-button {
+                            padding: 0.5em 1em 0.5em 0;
                             background: none;
                             border: none;
                             cursor: pointer;
@@ -63,7 +65,7 @@
                             &::after {
                                 content: url("../images/icon-arrow-light.svg");
                                 position: absolute;
-                                right: 2px;
+                                right: 0px;
                             }
                         }
                         .dropdown-content {
@@ -74,6 +76,28 @@
 
                 .login--wrap {
                     display: flex;
+                    align-items: center;
+
+                    .login__li {
+                        & + .login__li {
+                            margin-left: 2em;
+                        }
+                    }
+                    .signup--btn {
+                        background: color(neutral-white);
+                        padding: 0.5em 1.75em;
+                        border-radius: 999px;
+                        color: color(primary-light-red);
+                        font-weight: 600;
+                        text-align: center;
+                        display: inline-block;
+                        vertical-align: text-bottom;
+                        // display: flex;
+                    }
+
+                    .login--btn {
+                        color: color(neutral-white);
+                    }
                 }
             }
         }

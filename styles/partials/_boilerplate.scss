@@ -9,16 +9,32 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-    margin: inherit;
-    padding: inherit;
+    margin: 0;
+    padding: 0;
 }
 img {
     display: block;
 }
 
-a,
+li {
+    list-style-type: none;
+}
+
+ul,
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 button {
     font-family: $font-stack-Ubuntu;
+    font-size: rem(16px);
 }
 
 h1,
@@ -27,13 +43,8 @@ h3 {
     font-family: $font-stack-Overpass;
 }
 
-button {
-    font-family: $font-stack-Overpass;
-}
-
 body {
     font-size: rem(16px);
     font-family: $font-stack-Overpass;
     min-height: 100%;
-    @include background-Gradient-DarkBlue;
 }

@@ -1,0 +1,24 @@
+@mixin background-Gradient-Red {
+    background-image: linear-gradient(
+            to right,
+            hsla(13, 100%, 72%, 0.9),
+            hsla(353, 100%, 62%, 0.9)
+        ),
+        url("../images/bg-pattern-intro.svg");
+
+    // background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, 25% 51%;
+}
+
+@mixin background-Gradient-DarkBlue {
+    background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%))
+        no-repeat;
+}
+
+@mixin flexCenter($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}

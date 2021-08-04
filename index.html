@@ -27,11 +27,97 @@
         <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-        <h1>test</h1>
-        <p>
-            Product Overview Pricing Marketplace Features Integrations Company
-            About Team Blog Careers Connect Contact Newsletter LinkedIn Login
-            Sign Up A modern publishing platform Grow your audience and build
+        <div class="intro--container">
+            <header class="header">
+                <nav class="nav">
+                    <!-- this wraps everything in the nav -->
+                    <div class="menu--wrap">
+                        <img
+                            src="images/logo.svg"
+                            alt="Blogr logo"
+                            class="logo"
+                        />
+                        <!-- hamburger button for mobile -->
+                        <button id="hamburger--btn">
+                            <img
+                                src="images/icon-hamburger.svg"
+                                alt=""
+                                class="hamburger-img"
+                            />
+                        </button>
+                        <!-- this holds the dropdown menu buttons and the login/signup links -->
+                        <div class="menu--container">
+                            <!-- this wraps the dropdown buttons only-->
+                            <ul class="menu-buttons--wrap">
+                                <li class="menu__li">
+                                    <button class="menu-button">Product</button>
+                                    <div class="dropdown-content">
+                                        <a href="#!" class="dropdown__link"
+                                            >Pricing</a
+                                        >
+                                        <a href="#!" class="dropdown__link"
+                                            >Marketplace</a
+                                        >
+                                        <a href="#!" class="dropdown__link"
+                                            >Features</a
+                                        >
+                                        <a href="#!" class="dropdown__link"
+                                            >Integrations</a
+                                        >
+                                    </div>
+                                </li>
+                                <li class="menu__li">
+                                    <button class="menu-button">Company</button>
+                                    <div class="dropdown-content">
+                                        <a href="" class="dropdown__link"
+                                            >About</a
+                                        ><a href="" class="dropdown__link"
+                                            >Team</a
+                                        ><a href="" class="dropdown__link"
+                                            >Blog</a
+                                        >
+                                        <a href="" class="dropdown__link"
+                                            >Careers</a
+                                        >
+                                    </div>
+                                </li>
+                                <li class="menu__li">
+                                    <button class="menu-button">Connect</button>
+                                    <div class="dropdown-content">
+                                        <a href="" class="dropdown__link"
+                                            >Contact</a
+                                        ><a href="" class="dropdown__link"
+                                            >Newsletter</a
+                                        ><a href="" class="dropdown__link"
+                                            >LinkedIn</a
+                                        >
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- login / signup button wrap -->
+                            <ul class="login--wrap">
+                                <li class="login__li">
+                                    <a href="" class="login__a login--btn"
+                                        >Login</a
+                                    >
+                                </li>
+                                <li class="login__li">
+                                    <a href="" class="login__a signup--btn"
+                                        >Sign Up</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- menu--container ends -->
+                    </div>
+                    <!-- menu--wrap ends -->
+                </nav>
+            </header>
+        </div>
+        <!-- intro--container ends -->
+        <!--       
+                    
+             A modern publishing platform Grow your audience and build
             your online brand Start for Free Learn More Designed for the future
             Introducing an extensible editor Blogr features an exceedingly
             intuitive interface which lets you focus on one thing: creating
@@ -56,9 +142,8 @@
             CLI tool that makes customization and deployment a breeze, but
             capable of producing even the most complicated sites. Product
             Overview Pricing Marketplace Features Integrations Company About
-            Team Blog Careers Connect Contact Newsletter LinkedIn
-        </p>
-
+            Team Blog Careers Connect Contact Newsletter LinkedIn -->
+        <!-- 
         <div class="attribution">
             Challenge by
             <a
@@ -66,6 +151,6 @@
                 target="_blank"
                 >Frontend Mentor</a
             >. Coded by <a href="#">Your Name Here</a>.
-        </div>
+        </div> -->
     </body>
 </html>

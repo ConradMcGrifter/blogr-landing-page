@@ -1,6 +1,9 @@
 $font-stack-Overpass: "Overpass", Arial, Helvetica, sans-serif;
 $font-stack-Ubuntu: "Ubuntu", Arial, Helvetica, sans-serif;
 
+$max-width: 1100px;
+$border-radius: 0 0 0 75px;
+
 $font-weight: (
     light: 300,
     regular: 400,
@@ -20,32 +23,3 @@ $colors: (
     background-gradient-VeryDarkGrayBlue: hsl(237, 17%, 21%),
     background-gradient-VeryDarkDesaturatedBlue: hsl(237, 23%, 32%),
 );
-
-@mixin background-Gradient-Red {
-    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%))
-        no-repeat;
-}
-
-@mixin background-Gradient-DarkBlue {
-    background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%))
-        no-repeat;
-}
-
-@mixin flexCenter($direction: row) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
-}
-
-@function color($color-name) {
-    @return map-get($colors, $color-name);
-}
-
-@function fontWeight($weight) {
-    @return map-get($font-weight, $weight);
-}
-
-@function rem($size) {
-    @return $size / 16px * 1rem;
-}

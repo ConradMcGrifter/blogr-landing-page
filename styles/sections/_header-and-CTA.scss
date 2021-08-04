@@ -1,0 +1,81 @@
+.intro--container {
+    @include background-Gradient-Red;
+    // background-image: url("../images/bg-pattern-intro.svg");
+    // outline: solid rgb(72, 255, 0) 3px;
+    height: 550px;
+    border-radius: $border-radius;
+}
+
+.header {
+    padding: 3em 2em 2em 2em;
+    display: flex;
+    justify-content: center;
+    // outline: solid 2px red;
+
+    .nav {
+        // outline: solid black 2px;
+        max-width: $max-width;
+        width: 100%;
+
+        .menu--wrap {
+            display: flex;
+            // outline: solid green 2px;
+            align-items: center;
+
+            .logo {
+                width: 101px;
+                height: 40px;
+            }
+
+            #hamburger--btn {
+                display: none;
+            }
+
+            .menu--container {
+                // outline: solid white 2px;
+                margin-left: rem(40px);
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+
+                .menu-buttons--wrap {
+                    display: flex;
+                    // outline: solid pink 2px;
+
+                    .menu__li {
+                        padding: 0.5em 1em 0.5em 0;
+                        // outline: solid green 1px;
+                        position: relative;
+
+                        & + .menu__li {
+                            margin-left: 1em;
+                        }
+
+                        .menu-button {
+                            background: none;
+                            border: none;
+                            cursor: pointer;
+                            text-align: start;
+                            color: color(neutral-white);
+                            font-weight: 500;
+
+                            &::after {
+                                content: url("../images/icon-arrow-light.svg");
+                                position: absolute;
+                                right: 2px;
+                            }
+                        }
+                        .dropdown-content {
+                            display: none;
+                        }
+                    }
+                }
+
+                .login--wrap {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

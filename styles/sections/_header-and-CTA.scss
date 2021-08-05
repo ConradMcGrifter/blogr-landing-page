@@ -49,6 +49,11 @@
                         // outline: solid green 1px;
                         position: relative;
 
+                        &:hover .menu-button {
+                            text-decoration: underline;
+                            color: white;
+                        }
+
                         & + .menu__li {
                             margin-left: 2em;
                         }
@@ -59,17 +64,59 @@
                             border: none;
                             cursor: pointer;
                             text-align: start;
-                            color: color(neutral-white);
+                            color: rgba(255, 255, 255, 0.712);
                             font-weight: 500;
 
                             &::after {
                                 content: url("../images/icon-arrow-light.svg");
                                 position: absolute;
                                 right: 0px;
+                                bottom: rem(10px);
+                                // transition: transform 0.15s;
+                            }
+
+                            &.rotate::after {
+                                transform: rotate(180deg);
+                                bottom: rem(6px);
+                            }
+
+                            &.active::before {
+                                display: block;
+                            }
+
+                            &.active {
+                                text-decoration: underline;
+                                color: color(neutral-white);
                             }
                         }
+
                         .dropdown-content {
                             display: none;
+                            // display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            min-width: rem(150px);
+                            position: absolute;
+                            top: rem(45px);
+                            left: rem(-24px);
+                            background: white;
+                            padding: 0.5em 0 1.5em 0.5em;
+                            border-radius: 5px;
+                            box-shadow: $box-shadow;
+
+                            .dropdown__link {
+                                padding: 1em 1em 0 1em;
+                                color: black;
+                                font-weight: fontWeight(medium);
+
+                                &:hover {
+                                    font-weight: fontWeight(semi-bold);
+                                }
+                            }
+
+                            &.display {
+                                display: flex;
+                            }
                         }
                     }
                 }

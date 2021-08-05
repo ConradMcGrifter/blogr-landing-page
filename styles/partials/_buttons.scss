@@ -1,0 +1,29 @@
+.button-white {
+    background: color(neutral-white);
+    color: color(primary-light-red);
+    border-radius: 999px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    border: solid color(neutral-white) 2px;
+
+    &:hover {
+        background: color(primary-very-light-red);
+        color: color(neutral-white);
+        border: solid 2px color(primary-very-light-red);
+    }
+}
+
+.button-outline {
+    border: solid 2px color(neutral-white);
+    color: color(neutral-white);
+    border-radius: 999px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 1em;
+
+    &:hover {
+        background: color(neutral-white);
+        color: color(primary-very-light-red);
+    }
+}

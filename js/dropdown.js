@@ -26,9 +26,9 @@ for (let i = 0; i < menuButton.length; i++) {
         setClass(menuButton, "active");
 
         if (setClasses) {
-            this.nextElementSibling.classList.toggle("display");
-            menuButton[i].classList.toggle("rotate");
-            menuButton[i].classList.toggle("active");
+            this.nextElementSibling.classList.add("display");
+            menuButton[i].classList.add("rotate");
+            menuButton[i].classList.add("active");
         }
     });
 }

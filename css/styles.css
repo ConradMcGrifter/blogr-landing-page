@@ -55,13 +55,50 @@ body {
   min-height: 100%;
 }
 
+.button-white {
+  background: white;
+  color: #ff525d;
+  border-radius: 999px;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  border: solid white 2px;
+}
+
+.button-white:hover {
+  background: #ff7a85;
+  color: white;
+  border: solid 2px #ff7a85;
+}
+
+.button-outline {
+  border: solid 2px white;
+  color: white;
+  border-radius: 999px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.button-outline:hover {
+  background: white;
+  color: #ff7a85;
+}
+
 .intro--container {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 143, 112, 0.9)), to(rgba(255, 61, 84, 0.9))), url("../images/bg-pattern-intro.svg");
   background-image: linear-gradient(to right, rgba(255, 143, 112, 0.9), rgba(255, 61, 84, 0.9)), url("../images/bg-pattern-intro.svg");
   background-repeat: no-repeat;
   background-position: center, 25% 51%;
-  height: 550px;
+  height: 525px;
   border-radius: 0 0 0 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header {
@@ -95,6 +132,8 @@ body {
 
 .header .nav .menu--wrap #hamburger--btn {
   display: none;
+  background: none;
+  border: none;
 }
 
 .header .nav .menu--wrap .menu--container {
@@ -213,17 +252,55 @@ body {
 }
 
 .header .nav .menu--wrap .menu--container .login--wrap .signup--btn {
-  background: white;
   padding: 0.5em 1.75em;
-  border-radius: 999px;
-  color: #ff525d;
-  font-weight: 600;
-  text-align: center;
-  display: inline-block;
-  vertical-align: text-bottom;
 }
 
 .header .nav .menu--wrap .menu--container .login--wrap .login--btn {
   color: white;
+}
+
+.call-to-action--container {
+  height: 100%;
+}
+
+.call-to-action--container .call-to-action--wrap {
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.call-to-action--container .call-to-action--wrap .cta__h1 {
+  color: white;
+  font-size: 3.75rem;
+}
+
+.call-to-action--container .call-to-action--wrap .cta__p {
+  margin-top: 1em;
+  color: rgba(255, 255, 255, 0.76);
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.call-to-action--container .call-to-action--wrap .cta__link--wrap {
+  margin-top: 2em;
+}
+
+.call-to-action--container .call-to-action--wrap .cta__link--wrap .start-btn {
+  padding: 0.5em 1em;
+}
+
+.call-to-action--container .call-to-action--wrap .cta__link--wrap .learn-btn {
+  padding: 0.5em 1em;
 }
 /*# sourceMappingURL=styles.css.map */

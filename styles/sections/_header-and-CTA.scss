@@ -1,25 +1,23 @@
+// this holds the header/nav + the call to action section.
 .intro--container {
     @include background-Gradient-Red;
-    // background-image: url("../images/bg-pattern-intro.svg");
-    // outline: solid rgb(72, 255, 0) 3px;
-    height: 550px;
+    height: 525px;
     border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     padding: 3em 2em 2em 2em;
     display: flex;
     justify-content: center;
-    // outline: solid 2px red;
 
     .nav {
-        // outline: solid black 2px;
         max-width: $max-width;
         width: 100%;
 
         .menu--wrap {
             display: flex;
-            // outline: solid green 2px;
             align-items: center;
 
             .logo {
@@ -29,24 +27,25 @@
 
             #hamburger--btn {
                 display: none;
+                background: none;
+                border: none;
             }
 
+            // this container holds the dropdown menu buttons and the login / signup links
             .menu--container {
-                // outline: solid white 2px;
                 margin-left: rem(40px);
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
                 align-items: center;
 
+                // this wrap holds the dropdown buttons only
                 .menu-buttons--wrap {
                     display: flex;
-                    // outline: solid pink 2px;
 
+                    // this li holds the button and the dropdown-content
                     .menu__li {
                         display: flex;
-
-                        // outline: solid green 1px;
                         position: relative;
 
                         &:hover .menu-button {
@@ -72,7 +71,6 @@
                                 position: absolute;
                                 right: 0px;
                                 bottom: rem(10px);
-                                // transition: transform 0.15s;
                             }
 
                             &.rotate::after {
@@ -92,7 +90,6 @@
 
                         .dropdown-content {
                             display: none;
-                            // display: flex;
                             flex-direction: column;
                             width: 100%;
                             min-width: rem(150px);
@@ -121,6 +118,7 @@
                     }
                 }
 
+                // this holds the login / signup links
                 .login--wrap {
                     display: flex;
                     align-items: center;
@@ -131,21 +129,46 @@
                         }
                     }
                     .signup--btn {
-                        background: color(neutral-white);
+                        // vertical-align: text-bottom;
                         padding: 0.5em 1.75em;
-                        border-radius: 999px;
-                        color: color(primary-light-red);
-                        font-weight: 600;
-                        text-align: center;
-                        display: inline-block;
-                        vertical-align: text-bottom;
-                        // display: flex;
                     }
 
                     .login--btn {
                         color: color(neutral-white);
                     }
                 }
+            }
+        }
+    }
+}
+
+.call-to-action--container {
+    height: 100%;
+    // @include flexCenter();
+    .call-to-action--wrap {
+        margin-top: 5em;
+        @include flexCenter(column);
+        .cta__h1 {
+            color: color(neutral-white);
+            font-size: rem(60px);
+        }
+
+        .cta__p {
+            margin-top: 1em;
+            color: rgba(255, 255, 255, 0.76);
+            font-weight: fontWeight(medium);
+            font-size: rem(20px);
+        }
+
+        .cta__link--wrap {
+            margin-top: 2em;
+
+            .start-btn {
+                padding: 0.5em 1em;
+            }
+
+            .learn-btn {
+                padding: 0.5em 1em;
             }
         }
     }

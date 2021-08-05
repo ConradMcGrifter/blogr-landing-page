@@ -1,10 +1,14 @@
 // this holds the header/nav + the call to action section.
 .intro--container {
     @include background-Gradient-Red;
-    height: 525px;
+    height: rem(550px);
     border-radius: $border-radius;
     display: flex;
     flex-direction: column;
+
+    @include mobileSize {
+        @include background-Gradient-Red-Mobile;
+    }
 }
 
 .header {
@@ -20,6 +24,11 @@
             display: flex;
             align-items: center;
 
+            @include mobileSize {
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
             .logo {
                 width: 101px;
                 height: 40px;
@@ -29,20 +38,28 @@
                 display: none;
                 background: none;
                 border: none;
+
+                @include mobileSize {
+                    display: block;
+                }
             }
 
             // this container holds the dropdown menu buttons and the login / signup links
             .menu--container {
-                margin-left: rem(40px);
+                // margin-left: rem(40px);
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
                 align-items: center;
 
+                @include mobileSize {
+                    display: none;
+                }
+
                 // this wrap holds the dropdown buttons only
                 .menu-buttons--wrap {
                     display: flex;
-
+                    margin-left: rem(55px);
                     // this li holds the button and the dropdown-content
                     .menu__li {
                         display: flex;
@@ -144,20 +161,27 @@
 
 .call-to-action--container {
     height: 100%;
+    padding: 0 $padding;
     // @include flexCenter();
     .call-to-action--wrap {
         margin-top: 5em;
         @include flexCenter(column);
+
+        @include mobileSize {
+            margin-top: 3.5em;
+        }
         .cta__h1 {
             color: color(neutral-white);
-            font-size: rem(60px);
+            font-size: clamp(rem(35px), 5vw, rem(60px));
+            text-align: center;
         }
 
         .cta__p {
             margin-top: 1em;
             color: rgba(255, 255, 255, 0.76);
             font-weight: fontWeight(medium);
-            font-size: rem(20px);
+            font-size: clamp(rem(18px), 2vw, rem(20px));
+            text-align: center;
         }
 
         .cta__link--wrap {

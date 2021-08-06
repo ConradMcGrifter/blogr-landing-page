@@ -16,6 +16,10 @@
     display: flex;
     justify-content: center;
 
+    @include mobileSize {
+        padding: $padding;
+    }
+
     .nav {
         max-width: $max-width;
         width: 100%;
@@ -65,7 +69,7 @@
                         background: white;
                         border-radius: 5px;
                         position: absolute;
-                        top: rem(75px);
+                        top: rem(65px);
                     }
                 }
 

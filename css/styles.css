@@ -275,6 +275,12 @@ body {
   }
 }
 
+.header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus + .dropdown-content.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button::after {
   content: url("../images/icon-arrow-light.svg");
   position: absolute;
@@ -290,14 +296,14 @@ body {
   }
 }
 
-.header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button.rotate::after {
+.header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus.rotate::after {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   bottom: 0.3125rem;
 }
 
 @media only screen and (max-width: 850px) {
-  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button.rotate::after {
+  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus.rotate::after {
     bottom: 0.75rem;
   }
 }
@@ -306,13 +312,13 @@ body {
   display: block;
 }
 
-.header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button.active {
+.header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus.active {
   text-decoration: underline;
   color: white;
 }
 
 @media only screen and (max-width: 850px) {
-  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button.active {
+  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus.active {
     color: rgba(31, 63, 91, 0.644);
     text-decoration: none;
   }
@@ -372,12 +378,6 @@ body {
 
 .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .dropdown-content .dropdown__link:hover {
   font-weight: 600;
-}
-
-.header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .dropdown-content.display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .header .nav .menu--wrap .menu--container .login--wrap {

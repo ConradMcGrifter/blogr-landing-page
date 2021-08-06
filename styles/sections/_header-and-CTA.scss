@@ -120,6 +120,10 @@
                                 width: auto;
                             }
 
+                            &:focus + .dropdown-content.display {
+                                display: flex;
+                            }
+
                             &::after {
                                 content: url("../images/icon-arrow-light.svg");
                                 position: absolute;
@@ -133,7 +137,7 @@
                                 }
                             }
 
-                            &.rotate::after {
+                            &:focus.rotate::after {
                                 transform: rotate(180deg);
                                 bottom: rem(5px);
 
@@ -146,7 +150,7 @@
                                 display: block;
                             }
 
-                            &.active {
+                            &:focus.active {
                                 text-decoration: underline;
                                 color: color(neutral-white);
 
@@ -201,9 +205,9 @@
                                 }
                             }
 
-                            &.display {
-                                display: flex;
-                            }
+                            // &.display {
+                            //     display: flex;
+                            // }
                         }
                     }
                 }

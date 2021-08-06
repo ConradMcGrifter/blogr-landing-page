@@ -8,7 +8,8 @@
         "../styles/partials/utils/_mixins.scss",
         "../styles/partials/_boilerplate.scss",
         "../styles/partials/_buttons.scss",
-        "../styles/sections/_header-and-CTA.scss"
+        "../styles/sections/_header-and-CTA.scss",
+        "../styles/sections/_Designed-for-the-Future.scss"
     ],
     "names": [],
     "file": "styles.css"

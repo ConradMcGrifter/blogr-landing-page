@@ -273,12 +273,37 @@ body {
     position: relative;
     width: auto;
   }
+  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button.rotate::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    bottom: 0.75rem;
+  }
+  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button.active {
+    color: rgba(31, 63, 91, 0.644);
+    text-decoration: none;
+  }
+  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button + .dropdown-content.display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus + .dropdown-content.display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media only screen and (min-width: 851px) {
+  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus + .dropdown-content.display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus.rotate::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    bottom: 0.3125rem;
+  }
+  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus.active {
+    text-decoration: underline;
+    color: white;
+  }
 }
 
 .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button::after {
@@ -293,34 +318,6 @@ body {
     content: url("../images/icon-arrow-dark.svg");
     bottom: 1.1875rem;
     right: -0.9375rem;
-  }
-}
-
-.header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus.rotate::after {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  bottom: 0.3125rem;
-}
-
-@media only screen and (max-width: 850px) {
-  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus.rotate::after {
-    bottom: 0.75rem;
-  }
-}
-
-.header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button.active::before {
-  display: block;
-}
-
-.header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus.active {
-  text-decoration: underline;
-  color: white;
-}
-
-@media only screen and (max-width: 850px) {
-  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus.active {
-    color: rgba(31, 63, 91, 0.644);
-    text-decoration: none;
   }
 }
 

@@ -118,10 +118,35 @@
                                 text-align: center;
                                 position: relative;
                                 width: auto;
+
+                                &.rotate::after {
+                                    transform: rotate(180deg);
+                                    bottom: rem(12px);
+                                }
+
+                                &.active {
+                                    color: hsla(208, 49%, 24%, 0.644);
+                                    text-decoration: none;
+                                }
+
+                                & + .dropdown-content.display {
+                                    display: flex;
+                                }
                             }
 
-                            &:focus + .dropdown-content.display {
-                                display: flex;
+                            @include desktopSize {
+                                &:focus + .dropdown-content.display {
+                                    display: flex;
+                                }
+
+                                &:focus.rotate::after {
+                                    transform: rotate(180deg);
+                                    bottom: rem(5px);
+                                }
+                                &:focus.active {
+                                    text-decoration: underline;
+                                    color: color(neutral-white);
+                                }
                             }
 
                             &::after {
@@ -137,28 +162,9 @@
                                 }
                             }
 
-                            &:focus.rotate::after {
-                                transform: rotate(180deg);
-                                bottom: rem(5px);
-
-                                @include mobileSize {
-                                    bottom: rem(12px);
-                                }
-                            }
-
-                            &.active::before {
-                                display: block;
-                            }
-
-                            &:focus.active {
-                                text-decoration: underline;
-                                color: color(neutral-white);
-
-                                @include mobileSize {
-                                    color: hsla(208, 49%, 24%, 0.644);
-                                    text-decoration: none;
-                                }
-                            }
+                            // &.active::before {
+                            //     display: block;
+                            // }
                         }
 
                         .dropdown-content {

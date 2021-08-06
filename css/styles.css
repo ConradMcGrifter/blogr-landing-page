@@ -245,6 +245,13 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 850px) {
+  .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li:hover .menu-button {
+    color: unset;
+    text-decoration: none;
+  }
+}
+
 .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li + .menu__li {
   margin-left: 2em;
 }

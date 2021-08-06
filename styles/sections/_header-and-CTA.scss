@@ -93,6 +93,11 @@
                         &:hover .menu-button {
                             text-decoration: underline;
                             color: white;
+
+                            @include mobileSize {
+                                color: unset;
+                                text-decoration: none;
+                            }
                         }
 
                         & + .menu__li {

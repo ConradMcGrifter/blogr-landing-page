@@ -37,13 +37,13 @@
 }
 
 @mixin mobileSize {
-    @media only screen and (max-width: 850px) {
+    @media only screen and (max-width: 950px) {
         @content;
     }
 }
 
 @mixin desktopSize {
-    @media only screen and (min-width: 851px) {
+    @media only screen and (min-width: 950px) {
         @content;
     }
 }

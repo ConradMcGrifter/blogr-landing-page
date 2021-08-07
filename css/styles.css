@@ -27,11 +27,15 @@ li {
 }
 
 ul,
-p,
 h1,
 h2,
 h3 {
   margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.8;
 }
 
 a {
@@ -102,7 +106,7 @@ body {
           flex-direction: column;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .intro--container {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 143, 112, 0.9)), to(rgba(255, 61, 84, 0.9))), url("../images/bg-pattern-intro.svg");
     background-image: linear-gradient(to right, rgba(255, 143, 112, 0.9), rgba(255, 61, 84, 0.9)), url("../images/bg-pattern-intro.svg");
@@ -122,14 +126,14 @@ body {
           justify-content: center;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header {
     padding: 1.5em;
   }
 }
 
 .header .nav {
-  max-width: 70rem;
+  max-width: 68.75rem;
   width: 100%;
 }
 
@@ -143,7 +147,7 @@ body {
   position: relative;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -165,7 +169,7 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap #hamburger--btn {
     display: block;
   }
@@ -184,7 +188,7 @@ body {
           align-items: center;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container {
     display: none;
     padding: 0.5em 1.5em 1.5em 1.5em;
@@ -213,7 +217,7 @@ body {
   margin-left: 3.4375rem;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .menu-buttons--wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -231,7 +235,7 @@ body {
   position: relative;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -251,7 +255,7 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li:hover .menu-button {
     color: unset;
     text-decoration: none;
@@ -262,7 +266,7 @@ body {
   margin-left: 2em;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li + .menu__li {
     margin-left: 0;
   }
@@ -278,7 +282,7 @@ body {
   font-weight: 500;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button {
     color: #1f3f5b;
     padding: 1em 0;
@@ -302,7 +306,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 851px) {
+@media only screen and (min-width: 950px) {
   .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button:focus + .dropdown-content.display {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -326,7 +330,7 @@ body {
   bottom: 0.625rem;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .menu-button::after {
     content: url("../images/icon-arrow-dark.svg");
     bottom: 1.1875rem;
@@ -352,7 +356,7 @@ body {
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.212);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .dropdown-content {
     background: #f0f0f0;
     position: unset;
@@ -375,7 +379,7 @@ body {
   font-weight: 500;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .dropdown-content .dropdown__link {
     padding: 0 1em;
     font-weight: 600;
@@ -399,7 +403,7 @@ body {
           align-items: center;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .login--wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -419,7 +423,7 @@ body {
   margin-left: 2em;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .login--wrap .login__li + .login__li {
     margin-left: 0;
   }
@@ -429,7 +433,7 @@ body {
   padding: 0.5em 1.75em;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .login--wrap .signup--btn {
     background: -webkit-gradient(linear, left top, right top, from(#ff7a85), to(#ff525d));
     background: linear-gradient(to right, #ff7a85, #ff525d);
@@ -442,7 +446,7 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .login--wrap .login--btn {
     color: #1f3f5b;
   }
@@ -470,7 +474,7 @@ body {
           flex-direction: column;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .call-to-action--container .call-to-action--wrap {
     margin-top: 3.5em;
   }
@@ -503,5 +507,85 @@ body {
 
 .call-to-action--container .call-to-action--wrap .cta__link--wrap .learn-btn {
   padding: 0.5em 1em;
+}
+
+.designed-for-the-future--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+  padding: 10em 1.5em 16em 1.5em;
+}
+
+.designed-for-the-future--container .disigned-for-the-future--wrap {
+  width: 100%;
+  max-width: 68.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.designed-for-the-future--container .disigned-for-the-future--wrap .designed__h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1f3f5b;
+}
+
+.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7em;
+  height: auto;
+}
+
+.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap {
+  width: 100%;
+}
+
+.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .top__h3 {
+  font-size: 1.625rem;
+  color: #1f3f5b;
+}
+
+.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .bottom__h3 {
+  margin-top: 3em;
+  font-size: 1.625rem;
+  color: #1f3f5b;
+}
+
+.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .bottom__p,
+.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .top__p {
+  max-width: 52.25ch;
+  margin-top: 1em;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: #4b5862;
+  word-spacing: 0.15em;
+}
+
+.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .info__img--container {
+  position: relative;
+  width: 100%;
+}
+
+.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .info__img--container .info__img {
+  position: absolute;
+  -webkit-transform: translate(10%, -26.5%);
+          transform: translate(10%, -26.5%);
+  max-width: 56.25rem;
 }
 /*# sourceMappingURL=styles.css.map */

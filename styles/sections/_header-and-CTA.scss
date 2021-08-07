@@ -1,7 +1,7 @@
 // this holds the header/nav + the call to action section.
 .intro--container {
     @include background-Gradient-Red;
-    height: rem(550px);
+    // height: rem(550px);
     border-radius: $border-radius;
     display: flex;
     flex-direction: column;
@@ -292,7 +292,7 @@
         }
         .cta__h1 {
             color: color(neutral-white);
-            font-size: clamp(rem(37px), 5vw, rem(60px));
+            font-size: clamp(rem(34px), 5vw, rem(60px));
             text-align: center;
         }
 
@@ -306,6 +306,7 @@
 
         .cta__link--wrap {
             margin-top: 2em;
+            margin-bottom: 8em;
             display: flex;
 
             .start-btn {

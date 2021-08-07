@@ -95,7 +95,6 @@ body {
   background-image: linear-gradient(to right, rgba(255, 143, 112, 0.9), rgba(255, 61, 84, 0.9)), url("../images/bg-pattern-intro.svg");
   background-repeat: no-repeat;
   background-position: center, 25% 51%;
-  height: 34.375rem;
   border-radius: 0 0 0 75px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,7 +116,7 @@ body {
 }
 
 .header {
-  padding: 3em 1.5em 1.5em 1.5em;
+  padding: 3em 2em 2em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,7 +127,7 @@ body {
 
 @media only screen and (max-width: 950px) {
   .header {
-    padding: 1.5em;
+    padding: 2em;
   }
 }
 
@@ -191,7 +190,7 @@ body {
 @media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container {
     display: none;
-    padding: 0.5em 1.5em 1.5em 1.5em;
+    padding: 0.5em 2em 2em 2em;
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.212);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.212);
   }
@@ -361,7 +360,7 @@ body {
     background: #f0f0f0;
     position: unset;
     text-align: center;
-    padding: 1.5em;
+    padding: 2em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -454,7 +453,7 @@ body {
 
 .call-to-action--container {
   height: 100%;
-  padding: 0 1.5em;
+  padding: 0 2em;
 }
 
 .call-to-action--container .call-to-action--wrap {
@@ -482,7 +481,7 @@ body {
 
 .call-to-action--container .call-to-action--wrap .cta__h1 {
   color: white;
-  font-size: clamp(2.3125rem, 5vw, 3.75rem);
+  font-size: clamp(2.125rem, 5vw, 3.75rem);
   text-align: center;
 }
 
@@ -496,6 +495,7 @@ body {
 
 .call-to-action--container .call-to-action--wrap .cta__link--wrap {
   margin-top: 2em;
+  margin-bottom: 8em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,7 +524,13 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   overflow: hidden;
-  padding: 10em 1.5em 16em 1.5em;
+  padding: 10em 2em 16em 2em;
+}
+
+@media only screen and (max-width: 950px) {
+  .designed-for-the-future--container {
+    padding: 5em 0;
+  }
 }
 
 .designed-for-the-future--container .disigned-for-the-future--wrap {
@@ -541,7 +547,7 @@ body {
 
 .designed-for-the-future--container .disigned-for-the-future--wrap .designed__h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(1.625rem, 6vw, 2.5rem);
   color: #1f3f5b;
 }
 
@@ -553,13 +559,45 @@ body {
   height: auto;
 }
 
+@media only screen and (max-width: 950px) {
+  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 2em;
+  }
+}
+
 .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap {
   width: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 2.47em;
+  }
 }
 
 .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .top__h3 {
   font-size: 1.625rem;
   color: #1f3f5b;
+}
+
+@media only screen and (max-width: 950px) {
+  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .top__h3 {
+    text-align: center;
+  }
 }
 
 .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .bottom__h3 {
@@ -568,13 +606,25 @@ body {
   color: #1f3f5b;
 }
 
+@media only screen and (max-width: 950px) {
+  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .bottom__h3 {
+    text-align: center;
+  }
+}
+
 .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .bottom__p,
 .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .top__p {
   max-width: 52.25ch;
   margin-top: 1em;
-  font-size: clamp(0.875rem, 2vw, 1rem);
   color: #4b5862;
   word-spacing: 0.15em;
+}
+
+@media only screen and (max-width: 950px) {
+  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .bottom__p,
+  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .top__p {
+    text-align: center;
+  }
 }
 
 .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .info__img--container {
@@ -582,10 +632,37 @@ body {
   width: 100%;
 }
 
+@media only screen and (max-width: 950px) {
+  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .info__img--container {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+}
+
 .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .info__img--container .info__img {
   position: absolute;
   -webkit-transform: translate(10%, -26.5%);
           transform: translate(10%, -26.5%);
   max-width: 56.25rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .info__img--container .info__img {
+    display: none;
+  }
+}
+
+.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .info__img--container .info__img--mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .info__img--container .info__img--mobile {
+    display: block;
+    width: 100%;
+    max-width: 34.375rem;
+    margin-bottom: 2em;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -685,13 +685,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 0 75px 0 75px;
-  height: 25rem;
+  height: 23.4375rem;
 }
 
 @media only screen and (max-width: 950px) {
   .state-of-the-art--container {
     height: 37.5rem;
-    padding: 0 0 5em 0;
+    padding: 0 0 7em 0;
     background-size: cover;
     background-position: 50% -225px;
   }
@@ -739,7 +739,7 @@ body {
   .state-of-the-art--container .text-and-image--wrap .state-of-the-art__img--wrap .state-of-the-art__img {
     position: absolute;
     right: 0;
-    bottom: 1.875rem;
+    bottom: 0.3125rem;
   }
 }
 

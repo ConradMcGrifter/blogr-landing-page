@@ -2,7 +2,7 @@
 .intro--container {
     @include background-Gradient-Red;
     // height: rem(550px);
-    border-radius: $border-radius;
+    border-radius: 0px 0px 0px $border-radius;
     display: flex;
     flex-direction: column;
 
@@ -144,15 +144,15 @@
                             }
 
                             @include desktopSize {
-                                &:focus + .dropdown-content.display {
+                                & + .dropdown-content.display {
                                     display: flex;
                                 }
 
-                                &:focus.rotate::after {
+                                &.rotate::after {
                                     transform: rotate(180deg);
                                     bottom: rem(5px);
                                 }
-                                &:focus.active {
+                                &.active {
                                     text-decoration: underline;
                                     color: color(neutral-white);
                                 }
@@ -170,10 +170,6 @@
                                     right: rem(-15px);
                                 }
                             }
-
-                            // &.active::before {
-                            //     display: block;
-                            // }
                         }
 
                         .dropdown-content {

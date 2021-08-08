@@ -1,0 +1,52 @@
+.state-of-the-art--container {
+    background: linear-gradient(to right, rgb(44, 45, 63), rgb(63, 65, 100)),
+        url("../images/bg-pattern-circles.svg") no-repeat;
+
+    background-blend-mode: lighten;
+    background-position: -50% 85%;
+    padding: 0 $padding;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 $border-radius 0 $border-radius;
+    height: rem(385px);
+    .text-and-image--wrap {
+        // outline: solid red 2px;
+        max-width: $max-width;
+        display: flex;
+
+        .state-of-the-art__img--wrap {
+            position: relative;
+            width: 100%;
+            .state-of-the-art__img {
+                // position: absolute;
+                // bottom: rem(-225px);
+                right: rem(55px);
+                position: relative;
+                bottom: rem(65px);
+                width: 100%;
+
+                @media only screen and (max-width: 1050px) {
+                    bottom: rem(50px);
+                    right: rem(45px);
+                }
+            }
+        }
+
+        .state-of-the-art__info--wrap {
+            width: 100%;
+            color: color(neutral-white);
+            @include flexCenter(column);
+            align-items: flex-start;
+            .info__h2 {
+                font-size: clamp(rem(26px), 6vw, rem(36px));
+            }
+
+            .info__p {
+                max-width: 50ch;
+                // min-width: 50ch;
+                margin-top: 1em;
+                word-spacing: 0.05em;
+            }
+        }
+    }
+}

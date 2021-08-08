@@ -70,7 +70,7 @@
                     margin-top: 1em;
                     // font-size: clamp(rem(14px), 2vw, rem(16px));
                     color: color(neutral-body-copy);
-                    word-spacing: 0.15em;
+                    word-spacing: 0.05em;
 
                     @include mobileSize {
                         text-align: center;
@@ -88,10 +88,11 @@
                     place-items: center;
                 }
                 .info__img {
-                    // padding: 2em 2em 2em 0;
                     position: absolute;
-                    // left: rem(70px);
-                    // top: rem(-250px);
+                    // right: rem(-250px);
+                    // top: rem(-60px);
+                    // transform: scale(165%);
+                    // width: 100%;
                     transform: translate(10%, -26.5%);
 
                     max-width: rem(900px);

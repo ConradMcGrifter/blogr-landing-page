@@ -30,8 +30,10 @@ h3 {
 }
 
 p {
-    margin: 0;
+    margin: 1em 0 0 0;
     line-height: 1.8;
+    word-spacing: 0.05em;
+    max-width: 50ch;
 }
 
 a {

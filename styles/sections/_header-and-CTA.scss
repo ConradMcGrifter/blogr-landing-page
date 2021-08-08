@@ -288,12 +288,11 @@
         }
         .cta__h1 {
             color: color(neutral-white);
-            font-size: clamp(rem(34px), 5vw, rem(60px));
+            font-size: clamp(rem(34px), 5vw, rem(58px));
             text-align: center;
         }
 
         .cta__p {
-            margin-top: 1em;
             color: rgba(255, 255, 255, 0.76);
             font-weight: fontWeight(medium);
             font-size: clamp(rem(18px), 2vw, rem(20px));

@@ -851,6 +851,12 @@ a {
           justify-content: center;
 }
 
+@media only screen and (max-width: 950px) {
+  .laptop-section .laptop__content--wrap .laptop__img--wrap {
+    overflow: hidden;
+  }
+}
+
 .laptop-section .laptop__content--wrap .laptop__img--wrap .laptop__img {
   position: absolute;
   right: 1.5625rem;
@@ -871,7 +877,6 @@ a {
   .laptop-section .laptop__content--wrap .laptop__img--wrap .laptop__img--mobile {
     display: block;
     max-width: 43.75rem;
-    width: 100%;
   }
 }
 

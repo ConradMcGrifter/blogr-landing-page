@@ -897,4 +897,83 @@ body {
 .laptop-section .laptop__content--wrap .laptop__info--wrap .bottom__p {
   color: #4b5862;
 }
+
+.footer {
+  background: #25252d;
+  border-radius: 0 75px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4em 2em;
+}
+
+.footer .footer__content--container {
+  width: 100%;
+  max-width: 68.75rem;
+}
+
+.footer .footer__content--container .footer__content--wrap {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 950px) {
+  .footer .footer__content--container .footer__content--wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+.footer .footer__content--container .footer__content--wrap .footer__links--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 950px) {
+  .footer .footer__content--container .footer__content--wrap .footer__links--wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer .footer__content--container .footer__content--wrap .footer__links--wrap .footer__h4 {
+  margin-bottom: 2em;
+  font-size: 1.125rem;
+  color: white;
+}
+
+@media only screen and (max-width: 950px) {
+  .footer .footer__content--container .footer__content--wrap .footer__links--wrap .footer__h4 {
+    margin-top: 3em;
+  }
+}
+
+.footer .footer__content--container .footer__content--wrap .footer__links--wrap .footer__links {
+  color: #c8c8cb;
+}
+
+.footer .footer__content--container .footer__content--wrap .footer__links--wrap .footer__links:hover {
+  text-decoration: underline;
+}
+
+.footer .footer__content--container .footer__content--wrap .footer__links--wrap .footer__links + .footer__links {
+  margin-top: 1em;
+}
 /*# sourceMappingURL=styles.css.map */

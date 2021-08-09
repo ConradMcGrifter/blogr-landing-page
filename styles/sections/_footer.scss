@@ -31,7 +31,7 @@
                 }
 
                 .footer__h4 {
-                    margin-bottom: 2em;
+                    margin-bottom: 1.75em;
                     font-size: rem(18px);
                     color: color(neutral-white);
 
@@ -42,6 +42,7 @@
 
                 .footer__links {
                     color: color(neutral-footer-text);
+                    font-weight: fontWeight(regular);
 
                     &:hover {
                         text-decoration: underline;

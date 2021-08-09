@@ -48,6 +48,18 @@
                 @include mobileSize {
                     display: block;
                 }
+
+                .hamburger-img.display {
+                    display: none;
+                }
+            }
+
+            #icon-close {
+                display: none;
+
+                &.display {
+                    display: block;
+                }
             }
 
             // this container holds the dropdown menu buttons and the login / signup links
@@ -198,12 +210,12 @@
 
                             .dropdown__link {
                                 padding: 1em 1em 0 1em;
-                                color: black;
-                                font-weight: fontWeight(medium);
+                                color: color(neutral-footer-background);
+                                font-weight: fontWeight(regular);
 
                                 @include mobileSize {
                                     padding: 0 1em;
-                                    font-weight: fontWeight(semi-bold);
+                                    font-weight: fontWeight(medium);
                                     color: hsla(208, 49%, 24%, 0.644);
 
                                     & + .dropdown__link {
@@ -212,7 +224,7 @@
                                 }
 
                                 &:hover {
-                                    font-weight: fontWeight(semi-bold);
+                                    font-weight: fontWeight(medium);
                                 }
                             }
 
@@ -297,6 +309,7 @@
             font-weight: fontWeight(medium);
             font-size: clamp(rem(18px), 2vw, rem(20px));
             text-align: center;
+            line-height: unset;
         }
 
         .cta__link--wrap {
@@ -305,11 +318,11 @@
             display: flex;
 
             .start-btn {
-                padding: 0.5em 1em;
+                padding: 0.65em 1em;
             }
 
             .learn-btn {
-                padding: 0.5em 1em;
+                padding: 0.65em 1em;
             }
         }
     }

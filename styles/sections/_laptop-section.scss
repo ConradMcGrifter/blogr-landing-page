@@ -16,7 +16,6 @@
 
         @include mobileSize {
             flex-direction: column;
-            text-align: center;
         }
 
         .laptop__img--wrap {
@@ -42,8 +41,6 @@
 
                 @include mobileSize {
                     display: block;
-                    // width: 100%;
-                    // transform: scale(125%);
                     max-width: rem(700px);
                 }
 
@@ -63,15 +60,6 @@
                 flex-direction: column;
                 align-items: center;
                 margin-top: 2em;
-            }
-
-            .bottom__h3 {
-                margin-top: 3em;
-            }
-
-            .top__p,
-            .bottom__p {
-                color: color(neutral-body-copy);
             }
         }
     }

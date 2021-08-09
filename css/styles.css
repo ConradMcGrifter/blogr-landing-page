@@ -33,28 +33,6 @@ h3 {
   margin: 0;
 }
 
-h3 {
-  font-size: 1.625rem;
-  color: #1f3f5b;
-}
-
-p {
-  margin: 1em 0 0 0;
-  line-height: 1.8;
-  word-spacing: 0.05em;
-  max-width: 50ch;
-}
-
-a {
-  text-decoration: none;
-  font-weight: 600;
-}
-
-button {
-  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
-  font-size: 1.125rem;
-}
-
 h1,
 h2,
 h3 {
@@ -67,6 +45,64 @@ body {
   min-height: 100%;
 }
 
+p {
+  margin: 1em 0 0 0;
+  line-height: 1.8;
+  word-spacing: 0.05em;
+  max-width: 50ch;
+}
+
+.bottom__p,
+.top__p {
+  color: #4b5862;
+}
+
+@media only screen and (max-width: 950px) {
+  .bottom__p,
+  .top__p {
+    text-align: center;
+  }
+}
+
+.top__h3 {
+  font-size: 1.625rem;
+  color: #1f3f5b;
+}
+
+@media only screen and (max-width: 950px) {
+  .top__h3 {
+    text-align: center;
+  }
+}
+
+.bottom__h3 {
+  margin-top: 3em;
+  font-size: 1.625rem;
+  color: #1f3f5b;
+}
+
+@media only screen and (max-width: 950px) {
+  .bottom__h3 {
+    text-align: center;
+  }
+}
+
+h3 {
+  font-size: 1.625rem;
+  color: #1f3f5b;
+}
+
+button {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
 .button-white {
   background: white;
   color: #ff525d;
@@ -74,17 +110,17 @@ body {
   font-weight: 600;
   text-align: center;
   display: inline-block;
-  border: solid white 2px;
+  border: solid white 1px;
 }
 
 .button-white:hover {
   background: #ff7a85;
   color: white;
-  border: solid 2px #ff7a85;
+  border: solid 1px #ff7a85;
 }
 
 .button-outline {
-  border: solid 2px white;
+  border: solid 1px white;
   color: white;
   border-radius: 999px;
   text-align: center;
@@ -179,6 +215,18 @@ body {
   .header .nav .menu--wrap #hamburger--btn {
     display: block;
   }
+}
+
+.header .nav .menu--wrap #hamburger--btn .hamburger-img.display {
+  display: none;
+}
+
+.header .nav .menu--wrap #icon-close {
+  display: none;
+}
+
+.header .nav .menu--wrap #icon-close.display {
+  display: block;
 }
 
 .header .nav .menu--wrap .menu--container {
@@ -381,14 +429,14 @@ body {
 
 .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .dropdown-content .dropdown__link {
   padding: 1em 1em 0 1em;
-  color: black;
-  font-weight: 500;
+  color: #25252d;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 950px) {
   .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .dropdown-content .dropdown__link {
     padding: 0 1em;
-    font-weight: 600;
+    font-weight: 500;
     color: rgba(31, 63, 91, 0.644);
   }
   .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .dropdown-content .dropdown__link + .dropdown__link {
@@ -397,7 +445,7 @@ body {
 }
 
 .header .nav .menu--wrap .menu--container .menu-buttons--wrap .menu__li .dropdown-content .dropdown__link:hover {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .header .nav .menu--wrap .menu--container .login--wrap {
@@ -497,6 +545,7 @@ body {
   font-weight: 500;
   font-size: clamp(1.125rem, 2vw, 1.25rem);
   text-align: center;
+  line-height: unset;
 }
 
 .call-to-action--container .call-to-action--wrap .cta__link--wrap {
@@ -508,11 +557,11 @@ body {
 }
 
 .call-to-action--container .call-to-action--wrap .cta__link--wrap .start-btn {
-  padding: 0.5em 1em;
+  padding: 0.65em 1em;
 }
 
 .call-to-action--container .call-to-action--wrap .cta__link--wrap .learn-btn {
-  padding: 0.5em 1em;
+  padding: 0.65em 1em;
 }
 
 .designed-for-the-future--container {
@@ -603,41 +652,6 @@ body {
   }
 }
 
-.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .top__h3 {
-  font-size: 1.625rem;
-  color: #1f3f5b;
-}
-
-@media only screen and (max-width: 950px) {
-  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .top__h3 {
-    text-align: center;
-  }
-}
-
-.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .bottom__h3 {
-  margin-top: 3em;
-  font-size: 1.625rem;
-  color: #1f3f5b;
-}
-
-@media only screen and (max-width: 950px) {
-  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .bottom__h3 {
-    text-align: center;
-  }
-}
-
-.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .bottom__p,
-.designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .top__p {
-  color: #4b5862;
-}
-
-@media only screen and (max-width: 950px) {
-  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .bottom__p,
-  .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .designed-content__info--wrap .top__p {
-    text-align: center;
-  }
-}
-
 .designed-for-the-future--container .disigned-for-the-future--wrap .designed-content--wrap .info__img--container {
   position: relative;
   width: 100%;
@@ -698,7 +712,7 @@ body {
     height: 37.5rem;
     padding: 0 0 7em 0;
     background-size: cover;
-    background-position: 50% -225px;
+    background-position: 49% -250px;
   }
 }
 
@@ -820,7 +834,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
   }
 }
 
@@ -890,15 +903,6 @@ body {
   }
 }
 
-.laptop-section .laptop__content--wrap .laptop__info--wrap .bottom__h3 {
-  margin-top: 3em;
-}
-
-.laptop-section .laptop__content--wrap .laptop__info--wrap .top__p,
-.laptop-section .laptop__content--wrap .laptop__info--wrap .bottom__p {
-  color: #4b5862;
-}
-
 .footer {
   background: #25252d;
   border-radius: 0 75px 0 0;
@@ -955,7 +959,7 @@ body {
 }
 
 .footer .footer__content--container .footer__content--wrap .footer__links--wrap .footer__h4 {
-  margin-bottom: 2em;
+  margin-bottom: 1.75em;
   font-size: 1.125rem;
   color: white;
 }
@@ -968,6 +972,7 @@ body {
 
 .footer .footer__content--container .footer__content--wrap .footer__links--wrap .footer__links {
   color: #c8c8cb;
+  font-weight: 400;
 }
 
 .footer .footer__content--container .footer__content--wrap .footer__links--wrap .footer__links:hover {

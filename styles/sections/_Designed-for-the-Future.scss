@@ -50,36 +50,6 @@
                     align-items: center;
                     padding: 0 2.47em;
                 }
-
-                .top__h3 {
-                    font-size: rem(26px);
-                    color: color(primary-very-dark-blue);
-                    @include mobileSize {
-                        text-align: center;
-                    }
-                }
-
-                .bottom__h3 {
-                    margin-top: 3em;
-                    font-size: rem(26px);
-
-                    color: color(primary-very-dark-blue);
-
-                    @include mobileSize {
-                        text-align: center;
-                    }
-                }
-
-                .bottom__p,
-                .top__p {
-                    // max-width: 50ch;
-                    // font-size: clamp(rem(14px), 2vw, rem(16px));
-                    color: color(neutral-body-copy);
-
-                    @include mobileSize {
-                        text-align: center;
-                    }
-                }
             }
 
             //this holds the image
@@ -93,12 +63,7 @@
                 }
                 .info__img {
                     position: absolute;
-                    // right: rem(-250px);
-                    // top: rem(-60px);
-                    // transform: scale(165%);
-                    // width: 100%;
                     transform: translate(10%, -26.5%);
-
                     max-width: rem(900px);
 
                     @include mobileSize {

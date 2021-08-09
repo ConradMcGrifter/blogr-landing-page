@@ -1,7 +1,9 @@
 const HAMBURGER = document.getElementById("hamburger--btn");
+const hamburgerImg = document.querySelector(".hamburger-img");
 const menuContainer = document.querySelector(".menu--container");
 const dropdownContent = document.querySelectorAll(".dropdown-content");
 const menuButton = document.querySelectorAll(".menu-button");
+const closeBtn = document.getElementById("icon-close");
 
 HAMBURGER.addEventListener("click", () => {
     menuContainer.classList.toggle("display");
@@ -12,4 +14,7 @@ HAMBURGER.addEventListener("click", () => {
         menuButton[i].classList.remove("active");
         menuButton[i].classList.remove("rotate");
     }
+
+    closeBtn.classList.toggle("display");
+    hamburgerImg.classList.toggle("display");
 });

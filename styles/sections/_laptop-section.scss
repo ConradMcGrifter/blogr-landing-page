@@ -5,7 +5,8 @@
     margin-top: 2em;
 
     @include mobileSize {
-        padding: 3em 0;
+        padding: 3em 0 5em 0;
+        max-height: unset;
     }
 
     .laptop__content--wrap {

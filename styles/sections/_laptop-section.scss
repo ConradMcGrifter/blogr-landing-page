@@ -1,10 +1,11 @@
 .laptop-section {
-    padding: 20em $padding;
+    padding: 16em $padding;
     @include flexCenter(row);
     max-height: rem(1000px);
+    margin-top: 2em;
 
     @include mobileSize {
-        padding: 5em 0;
+        padding: 3em 0;
     }
 
     .laptop__content--wrap {
@@ -40,13 +41,14 @@
 
                 @include mobileSize {
                     display: block;
-                    width: 100%;
-                    transform: scale(125%);
+                    // width: 100%;
+                    // transform: scale(125%);
                     max-width: rem(700px);
                 }
 
                 @media only screen and (min-width: 500px) {
                     transform: unset;
+                    width: 100%;
                 }
             }
         }
@@ -59,7 +61,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-top: 4em;
+                margin-top: 2em;
             }
 
             .bottom__h3 {

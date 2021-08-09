@@ -3,7 +3,7 @@
     // background: rgba(255, 192, 203, 0.411);
     overflow: hidden;
     padding: 10em $padding 16em $padding;
-    max-height: rem(950px);
+    max-height: rem(1000px);
 
     @include mobileSize {
         padding: 5em 0 22em 0;

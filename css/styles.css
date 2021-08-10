@@ -151,7 +151,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 650px;
+  height: 625px;
 }
 
 @media only screen and (max-width: 950px) {
@@ -492,7 +492,7 @@ a {
 }
 
 .header .nav .menu--wrap .menu--container .login--wrap .signup--btn {
-  padding: 0.75em 1.75em;
+  padding: 0.75em 2.25em;
 }
 
 @media only screen and (max-width: 950px) {

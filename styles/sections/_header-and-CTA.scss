@@ -293,11 +293,14 @@
 .call-to-action--container {
     height: 100%;
     padding: 0 $padding;
+
     @include flexCenter();
     .call-to-action--wrap {
         // margin-top: 5em;
+        margin-bottom: 2em;
         @include flexCenter(column);
         @include mobileSize {
+            margin-bottom: 0;
             margin-top: 3.5em;
         }
         .cta__h1 {

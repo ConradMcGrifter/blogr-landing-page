@@ -161,7 +161,7 @@ a {
     background-image: linear-gradient(to right, rgba(255, 143, 112, 0.9), rgba(255, 61, 84, 0.9)), url("../images/bg-pattern-intro.svg");
     background-size: cover, 350%;
     background-repeat: no-repeat;
-    background-position: center, 35% 35%;
+    background-position: center, 35% 32%;
     height: unset;
     padding: 2em 0 8em 0;
   }
@@ -707,7 +707,7 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164)), url("../images/bg-pattern-circles.svg") no-repeat;
   background: linear-gradient(to right, #2c2d3f, #3f4164), url("../images/bg-pattern-circles.svg") no-repeat;
   background-blend-mode: lighten;
-  background-position: -50% 85%;
+  background-position: -50% 80%;
   padding: 0 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -716,7 +716,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 0 100px 0 100px;
-  height: 23.4375rem;
+  height: 25rem;
 }
 
 @media only screen and (max-width: 950px) {
@@ -756,18 +756,18 @@ a {
   right: 3.4375rem;
   position: relative;
   bottom: 4.375rem;
-  width: 100%;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1150px) {
   .state-of-the-art--container .text-and-image--wrap .state-of-the-art__img--wrap .state-of-the-art__img {
     bottom: 4.5rem;
-    right: 2.8125rem;
+    right: 1.875rem;
   }
 }
 
 @media only screen and (max-width: 950px) {
   .state-of-the-art--container .text-and-image--wrap .state-of-the-art__img--wrap .state-of-the-art__img {
+    width: 100%;
     position: absolute;
     right: 0;
     bottom: 0.3125rem;
@@ -807,7 +807,7 @@ a {
 }
 
 .laptop-section {
-  padding: 18em 2em;
+  padding: 20em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

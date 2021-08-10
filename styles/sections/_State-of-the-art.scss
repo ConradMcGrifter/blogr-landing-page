@@ -3,12 +3,12 @@
         url("../images/bg-pattern-circles.svg") no-repeat;
 
     background-blend-mode: lighten;
-    background-position: -50% 85%;
+    background-position: -50% 80%;
     padding: 0 $padding;
     display: flex;
     justify-content: center;
     border-radius: 0 $border-radius 0 $border-radius;
-    height: rem(375px);
+    height: rem(400px);
 
     @include mobileSize {
         height: rem(600px);
@@ -37,16 +37,17 @@
                 right: rem(55px);
                 position: relative;
                 bottom: rem(70px);
-                width: 100%;
 
-                @media only screen and (max-width: 1050px) {
+                @media only screen and (max-width: 1150px) {
                     // display: none;
+
                     bottom: rem(72px);
-                    right: rem(45px);
+                    right: rem(30px);
                     // transform: translate(13%, 25%);
                 }
 
                 @include mobileSize {
+                    width: 100%;
                     position: absolute;
                     right: 0;
                     bottom: rem(5px);

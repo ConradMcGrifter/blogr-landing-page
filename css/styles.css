@@ -140,10 +140,10 @@ a {
 }
 
 .intro--container {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 143, 112, 0.9)), to(rgba(255, 61, 84, 0.9))), url("../images/bg-pattern-intro.svg");
-  background-image: linear-gradient(to right, rgba(255, 143, 112, 0.9), rgba(255, 61, 84, 0.9)), url("../images/bg-pattern-intro.svg");
+  background-image: url("../images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
   background-repeat: no-repeat;
-  background-position: center, 26% 52%;
+  background-position: 26% 52%, center;
   border-radius: 0px 0px 0px 100px;
   display: -webkit-box;
   display: -ms-flexbox;

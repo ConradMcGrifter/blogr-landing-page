@@ -10,7 +10,7 @@
     @include mobileSize {
         @include background-Gradient-Red-Mobile;
         height: unset;
-        padding: 2em 0 8em 0;
+        padding: 2em 0 10em 0;
     }
 }
 
@@ -318,6 +318,10 @@
             margin-top: 2em;
             // margin-bottom: 8em;
             display: flex;
+
+            @include mobileSize {
+                margin-top: 3em;
+            }
         }
     }
 }

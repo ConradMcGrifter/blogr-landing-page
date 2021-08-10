@@ -5,14 +5,17 @@
     border-radius: 0px 0px 0px $border-radius;
     display: flex;
     flex-direction: column;
+    height: 650px;
 
     @include mobileSize {
         @include background-Gradient-Red-Mobile;
+        height: unset;
+        padding: 2em 0 8em 0;
     }
 }
 
 .header {
-    padding: 3em $padding $padding $padding;
+    padding: 4em $padding 0 $padding;
     display: flex;
     justify-content: center;
 
@@ -260,7 +263,7 @@
                     }
                     .signup--btn {
                         // vertical-align: text-bottom;
-                        padding: 0.5em 1.75em;
+                        padding: 0.75em 1.75em;
 
                         @include mobileSize {
                             background: linear-gradient(
@@ -290,17 +293,16 @@
 .call-to-action--container {
     height: 100%;
     padding: 0 $padding;
-    // @include flexCenter();
+    @include flexCenter();
     .call-to-action--wrap {
-        margin-top: 5em;
+        // margin-top: 5em;
         @include flexCenter(column);
-
         @include mobileSize {
             margin-top: 3.5em;
         }
         .cta__h1 {
             color: color(neutral-white);
-            font-size: clamp(rem(34px), 5vw, rem(58px));
+            font-size: clamp(rem(34px), 5vw, rem(60px));
             text-align: center;
         }
 
@@ -314,16 +316,8 @@
 
         .cta__link--wrap {
             margin-top: 2em;
-            margin-bottom: 8em;
+            // margin-bottom: 8em;
             display: flex;
-
-            .start-btn {
-                padding: 0.65em 1em;
-            }
-
-            .learn-btn {
-                padding: 0.65em 1em;
-            }
         }
     }
 }

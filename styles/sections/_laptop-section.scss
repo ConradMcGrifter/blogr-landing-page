@@ -1,7 +1,7 @@
 .laptop-section {
-    padding: 16em $padding;
+    padding: 18em $padding;
     @include flexCenter(row);
-    max-height: rem(1000px);
+    // max-height: rem(1000px);
     margin-top: 2em;
 
     @include mobileSize {

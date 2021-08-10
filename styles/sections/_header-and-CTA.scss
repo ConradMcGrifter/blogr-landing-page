@@ -5,7 +5,7 @@
     border-radius: 0px 0px 0px $border-radius;
     display: flex;
     flex-direction: column;
-    height: 625px;
+    height: 600px;
 
     @include mobileSize {
         @include background-Gradient-Red-Mobile;
